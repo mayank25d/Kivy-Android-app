@@ -1,0 +1,12 @@
+<Camrotate>:
+    Camera:
+        resolution: (640,480)
+        play: True
+        canvas.before:
+            PushMatrix:
+            Rotate:
+                axis: 0,0,1
+                angle: -90
+                origin: self.center
+        canvas.after:
+            PopMatrix:

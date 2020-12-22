@@ -1,0 +1,15 @@
+BoxLayout:
+    Camera:
+        id: kivy_cam
+        resolution: (640,480)
+        index: 0
+        play: True
+        canvas.before:
+            PushMatrix:
+            Rotate:
+                axis: 0,0,1
+                angle: -90
+                origin: self.center
+        canvas.after:
+            PopMatrix:
+
